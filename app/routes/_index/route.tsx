@@ -8,16 +8,18 @@ export default function HomePage() {
     return (
         <div>
             <div className="heroBanner">
-                <img
-                    src="https://static.wixstatic.com/media/32aab9_2c3c65e142434906992aedb17db53566~mv2.jpg"
-                    className="heroBannerImage"
-                    alt=""
-                />
                 <div className="heroBannerOverlay">
                     <div className="heroBannerSubtitle">ReClaim</div>
                     <h1 className="heroBannerTitle">Reuse. Repurpose. Relove.</h1>
                     <CategoryLink categorySlug="all-products">
-                        <LabelWithArrow>Shop Collections</LabelWithArrow>
+                        <LabelWithArrow>
+                            Shop Collections
+                            <img
+                                src="https://static.wixstatic.com/media/32aab9_2c3c65e142434906992aedb17db53566~mv2.jpg"
+                                className="heroBannerImage"
+                                alt=""
+                            />
+                        </LabelWithArrow>
                     </CategoryLink>
                 </div>
             </div>

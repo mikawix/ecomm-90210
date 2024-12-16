@@ -37,7 +37,7 @@ export const Header = ({ className }: HeaderProps) => {
             </section>
             <section className={styles.navigation}>
                 <div />
-                <NavigationMenu className={styles.menu} />
+                <NavigationMenu className={styles.menu} vertical />
                 <div className={styles.actions}>
                     <button
                         className={classNames(styles.cartButton, 'iconButton')}

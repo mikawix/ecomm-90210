@@ -59,6 +59,7 @@ export function Layout({ children }: React.PropsWithChildren) {
             </head>
             <body>
                 {children}
+                <div />
                 <ScrollRestoration />
                 <Scripts />
             </body>
