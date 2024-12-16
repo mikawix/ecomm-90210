@@ -3,21 +3,31 @@ import { CategoryLink } from '~/src/components/category-link/category-link';
 import { FeaturedProductsSection } from '~/src/components/featured-products-section/featured-products-section';
 import { LabelWithArrow } from '~/src/components/label-with-arrow/label-with-arrow';
 import { BackgroundParallax, FadeIn, FloatIn } from '~/src/components/visual-effects';
+import styles from './route.module.scss';
+import classNames from 'classnames';
 
 export default function HomePage() {
     return (
         <div>
             <div className="heroBanner">
-                <img
-                    src="https://static.wixstatic.com/media/32aab9_2c3c65e142434906992aedb17db53566~mv2.jpg"
-                    className="heroBannerImage"
-                    alt=""
-                />
                 <div className="heroBannerOverlay">
                     <div className="heroBannerSubtitle">ReClaim</div>
-                    <h1 className="heroBannerTitle">Reuse. Repurpose. Relove.</h1>
+                    <h1 className={classNames('heroBannerTitle', styles.header1)}>
+                        Reuse. Repurpose. Relove.
+                        <img
+                            src="https://static.wixstatic.com/media/11062b_25e218a68cae48e98a21198d1280a6bd~mv2.jpg/v1/fill/w_600,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_25e218a68cae48e98a21198d1280a6bd~mv2.jpg"
+                            alt=""
+                        />
+                    </h1>
                     <CategoryLink categorySlug="all-products">
-                        <LabelWithArrow>Shop Collections</LabelWithArrow>
+                        <LabelWithArrow>
+                            Shop Collections
+                            <img
+                                src="https://static.wixstatic.com/media/32aab9_2c3c65e142434906992aedb17db53566~mv2.jpg"
+                                className="heroBannerImage"
+                                alt=""
+                            />
+                        </LabelWithArrow>
                     </CategoryLink>
                 </div>
             </div>
